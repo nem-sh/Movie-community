@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://192.168.219.101:8080/accounts/profile/2 -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="http://192.168.219.101:8080/favicon.ico">
+    <title>movie_front</title>
+    <link href="./movie_front_files/jejugothic.css" rel="stylesheet">
+    <link rel="stylesheet" href="./movie_front_files/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="./movie_front_files/css2" rel="stylesheet">
+    <script src="./movie_front_files/0728c4a6ca.js.다운로드" crossorigin="anonymous"></script><link href="./movie_front_files/free-v4-shims.min.css" media="all" rel="stylesheet"><link href="./movie_front_files/free-v4-font-face.min.css" media="all" rel="stylesheet"><link href="./movie_front_files/free.min.css" media="all" rel="stylesheet">
+  <link href="./movie_front_files/app.js.다운로드" rel="preload" as="script"><link href="./movie_front_files/chunk-vendors.js.다운로드" rel="preload" as="script"><style type="text/css">
+a{
+  text-decoration: none;
+}
+.f-b{
+  font-size: 1.5rem;
+}
+.nav-pad{
+  margin: auto;
+}
+.main-bar{
+  margin-right: 150px;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px;
+}
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 50px;
+    background-color: rgba(146, 143, 143, 0.5);
+    border-radius: 30px;
+    padding: 6px;
+}
+.search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 30px;
+    transition: width 0.3s linear;
+}
+.searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 200px;
+    caret-color:red;
+    transition: width 0.4s linear;
+}
+.searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+}
+.search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+}
+.bg-violet{
+  background-color: violet;
+}
+.bg-purple{
+  background-color: purple;
+}
+.bg-yellow{
+  background-color: #e0d900;
+}
+.bg-red{
+  background-color:red;
+}
+
+</style><style type="text/css">
+.max-small2 {
+    width: 280px; height: auto;
+    max-height: 330px;
+}
+.max-small {
+    width: 200px; height: auto;
+    max-height: 300px;
+}
+.cardimg {
+    height: 250px;
+}
+.aactive {
+    color : hotpink;
+}
+.iinactive {
+    color : black;
+    opacity: 1;
+}
+
+</style><style type="text/css">
+h1:hover{
+    color:red;
+}
+</style><style type="text/css">
+.back{
+    background-color: #313131;
+}
+</style><style type="text/css">
+.max-small2 {
+    width: 280px; height: auto;
+    max-height: 330px;
+}
+.max-small {
+    width: 200px; height: auto;
+    max-height: 300px;
+}
+.cardimg {
+    width: 195px; height: 200px;
+}
+</style><style type="text/css">
+.listView{
+    background-color: black;
+}
+.bgbg{
+     background: -webkit-linear-gradient(90deg, black 50%, red 20%);
+}
+.carousel{
+    margin: auto;
+    width: 1000px;
+    height: 400px;
+}
+.carousel .item, .carousel .item.active, .carousel .carousel-inner {
+
+    margin: auto;
+    width: 75%;
+    height: 100%;
+    border-radius: 20px;
+}
+.carousel .fill {
+
+    width: 100%;
+
+    height: 100%;
+
+    background-position: center;
+
+    background-size: auto 100%;
+}
+.carousel-indicators{
+    margin-bottom: -30px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-size: 50%, 50%;
+    border-radius: 50%;
+    border: 1px solid white;
+    -webkit-filter: invert(0%);
+            filter: invert(0%);
+}
+img{
+    height: 400px;
+}
+.caption_title {
+
+    color: red !important;
+    width: 300px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+.caption_content{
+    color: white;
+    margin-bottom: 60px;
+    width: 200px;
+    margin-left: 40px;
+}
+.caption_title2 {
+
+    color: yellow !important;
+    width: 300px;
+    padding-right: 300px;
+    margin-right: 300px;
+    margin-bottom: 100px;
+    font-size: 3rem;
+}
+.div, .caption_content2{
+    color: white;
+    text-align: right;
+    padding-left: 200px;
+}
+.caption_title3 {
+
+    color: hotpink !important;
+    margin-bottom: 200px;
+    font-size: 3rem;
+}
+.kk:hover {
+    color: hotpink;
+}
+.kk2:hover {
+    color: red;
+}
+
+
+
+
+
+</style><style type="text/css">
+.skip {
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; 
+    line-height: 1.2em;
+    height: 3.6em; /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
+}
+</style><style type="text/css">
+.skip {
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; 
+    line-height: 1.2em;
+    height: 7.2em; /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
+    
+    text-align : left;
+}
+.bgbg1{
+    background: -webkit-linear-gradient(90deg, black 50%, violet 20%);
+}
+</style><style type="text/css">
+.bgrand3{
+    background-color: black;
+}
+.coll{
+    background: #1EB7B1;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    margin-right: 0 !important;
+    margin-left: 250px;
+    height: 80%;
+    width: 200px;
+}
+.contact-info{
+    margin-top:10%;
+    width: 10rem;
+}
+.contact-info img{
+    margin-bottom: 15%;
+    width: 4rem;
+    height: 4rem;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+div.page {
+
+	left:0; right:0;
+	top:0; bottom:0;
+	z-index:9;
+	text-align:center;
+}
+div.page .container {
+	padding-bottom:100px;
+}
+div.page h3 {
+	font-family: "Roboto", sans-serif;
+	font-size:35px;
+	margin-bottom:20px;
+	font-weight:300;
+    color: white;
+    text-align: center;
+    margin-right: 20rem;
+}
+div.page h3>span {
+	color:#1EB7B1;
+}
+div.page p {
+	margin-bottom:40px;
+}
+.display-table {
+	display:table;
+	width:100%;
+	height:100%;
+}
+.display-table-cell {
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+	height:100%;
+}
+
+
+
+
+
+/* form styling */
+label {
+	font-weight:400;
+	text-transform:uppercase;
+	font-size:15px;
+    color: #1b9e98;
+}
+button::-moz-focus-inner, 
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+textarea, input, button, *:focus {
+	outline:none !important;
+}
+textarea {
+	resize: vertical;
+}
+input:focus {
+	border-color:#1b9e98 !important;
+}
+.btn-primary1 {
+	border-color:#1b9e98 !important;
+	background-color:#1EB7B1;
+    width: 200px;
+    height: 50px;
+}
+.btn-primary1:active {
+	border-color:#1b9e98 !important;
+	background-color:#1b9e98;
+}
+.contact-box{
+    margin-right: 300px;
+}
+
+</style><style type="text/css">
+.skip {
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; 
+    line-height: 1.2em;
+    height: 7.2em; /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
+    
+    text-align : left;
+}
+</style><style type="text/css">
+.bgrand3{
+    background-color: black;
+}
+.coll2{
+    background: #dfbc23;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    margin-right: 0 !important;
+    margin-left: 250px;
+    height: 80%;
+    width: 200px;
+}
+.contact-info{
+    margin-top:10%;
+    width: 10rem;
+}
+.contact-info img{
+    margin-bottom: 15%;
+    width: 4rem;
+    height: 4rem;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+div.page {
+
+	left:0; right:0;
+	top:0; bottom:0;
+	z-index:9;
+	text-align:center;
+}
+div.page .container {
+	padding-bottom:100px;
+}
+div.page h3 {
+	font-family: "Roboto", sans-serif;
+	font-size:35px;
+	margin-bottom:20px;
+	font-weight:300;
+    color: white;
+    text-align: center;
+    margin-right: 20rem;
+}
+div.page p {
+	margin-bottom:40px;
+}
+.display-table {
+	display:table;
+	width:100%;
+	height:100%;
+}
+.display-table-cell {
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+	height:100%;
+}
+
+
+
+
+
+/* form styling */
+.label-detail {
+	font-weight:400;
+	text-transform:uppercase;
+	font-size:15px;
+    color: #dfbc23;
+}
+button::-moz-focus-inner, 
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+textarea, input, button, *:focus {
+	outline:none !important;
+}
+textarea {
+	resize: vertical;
+}
+.btn-primary2 {
+	border-color:#dfbc23 !important;
+	background-color:#dfbc23;
+    width: 200px;
+    height: 50px;
+}
+.contact-box{
+    margin-right: 300px;
+}
+
+
+</style><style type="text/css">
+.skip {
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; 
+    line-height: 1.2em;
+    height: 3.6em; /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
+}
+</style><style type="text/css">
+.bgbg1{
+        background: -webkit-linear-gradient(90deg, black 59%, #df631b 20%);
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-size: 50%, 50%;
+    border-radius: 50%;
+    border: 1px solid white;
+    -webkit-filter: invert(0%);
+            filter: invert(0%);
+}
+.pagination>li>a{
+    color: #df631b;
+}
+.project-tab {
+    padding: 10%;
+    margin-top: -8%;
+}
+.project-tab #tabs{
+    background: #007b5e;
+    color: #eee;
+}
+.project-tab #tabs h6.section-title{
+    color: #eee;
+}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #df631b;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 3px solid !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+.project-tab .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #df631b;
+    font-size: 16px;
+    font-weight: 600;
+}
+.project-tab .nav-link:hover {
+    border: none;
+}
+.project-tab thead{
+    background: #f3f3f3;
+    color: #333;
+}
+.project-tab a{
+    text-decoration: none;
+    color: rgb(141, 139, 139);
+    font-weight: 600;
+}
+.table, td{
+    color:rgb(141, 139, 139)
+}
+.tab-pane, td{
+    background-color: #333;
+}
+.pagination>li>a { 
+    
+    border-radius: 50% !important;
+    margin: 0 5px;
+}
+.pagination { 
+    
+    justify-content: center;
+}
+.bgrand{
+    background-color: black;
+}
+
+</style><script charset="utf-8" src="./movie_front_files/app.78cca912f0b6ff333da8.hot-update.js.다운로드"></script></head>
+  <body style="height: 1300px;">
+    <script src="./movie_front_files/jquery-3.5.1.slim.min.js.다운로드" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./movie_front_files/popper.min.js.다운로드" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="./movie_front_files/bootstrap.min.js.다운로드" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="./movie_front_files/jquery-1.11.1.min.js.다운로드"></script>
+    <noscript>
+      <strong>We're sorry but movie_front doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app" style="height: 100%; background-color: black;"><div class="fixed-top"><nav class="navbar navbar-expand-lg text-decoration-none p-0 bg-danger"><button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button><div id="navbarSupportedContent" class="collapse navbar-collapse "><ul class="navbar-nav ml-auto"><li class="nav-item"><a href="http://192.168.219.101:8080/accounts/login" class="nav-link text-black-50 pt-0 pb-0 " style="font-family: Staatliches, cursive;">Login</a></li><li class="nav-item"><a href="http://192.168.219.101:8080/accounts/signup" class="nav-link text-black-50 pt-0 pb-0" style="font-family: Staatliches, cursive;">Signup</a></li><li class="nav-item"><!----></li></ul></div></nav><nav class="navbar navbar-expand-lg text-decoration-none bg-red"><a href="http://192.168.219.101:8080/boards" class="ml-5 navbar-brand text-white font-weight-bold f-b" style="font-family: Staatliches, cursive;">Movie App</a><button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button><div id="navbarSupportedContent" class="collapse navbar-collapse main-bar"><ul class="navbar-nav  nav-pad"><li class="nav-item"><a href="http://192.168.219.101:8080/boards/community" class="nav-link font-weight-bold text-white f-b" style="font-family: Staatliches, cursive;">community</a></li><li class="nav-item"><a href="http://192.168.219.101:8080/boards/movie" class="nav-link font-weight-bold text-white f-b" style="font-family: Staatliches, cursive;">movie</a></li></ul><div class="searchbar"><input type="text" name="" placeholder="Search..." class="search_input"><a class="search_icon"><i class="fas fa-search" aria-hidden="true"></i></a></div></div></nav></div><div class="container" searchresultdata="[object Object]"><br><br><br><br><br><div class="card mb-3" style="max-width: 540px; margin-top: 100px;"><div class="row no-gutters"><div class="col-md-4"><img src="http://192.168.219.101:8080/accounts/profile/2" alt="" class="card-img"><img src="data:image/jpeg;base64,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" alt="" class="card-img" style="height: 180px;"></div><div class="col-md-8"><div class="card-body"><h5 class="card-title">sissong</h5><p class="card-text"></p><p class="card-text" style="height: 100px;"><small class="text-muted"></small></p><button>프로필 수정</button></div></div></div></div><br><hr align="center" style="border: 0.5px solid purple; width: 100%;"><h1 style="margin-right: 700px;">sissong의 Favorite</h1><div class="container"><div class="row"><div class="card d-inline-block  mr-2 ml-2" style="margin-top: 80px; background-color: black; height: 300px; width: 202px;"><img src="./movie_front_files/niyXFhGIk4W2WTcX2Eod8vx2Mfe.jpg" alt="" class=" cardimg iinactive" style="height: 300px;"></div><div class="card d-inline-block  mr-2 ml-2" style="margin-top: 80px; background-color: black; height: 300px; width: 202px;"><img src="./movie_front_files/ok4jQwrA54NGuw0qyGgVGCVe9H.jpg" alt="" class=" cardimg iinactive" style="height: 300px;"></div></div></div></div></div>
+    <!-- built files will be auto injected -->
+  <script type="text/javascript" src="./movie_front_files/chunk-vendors.js.다운로드"></script><script type="text/javascript" src="./movie_front_files/app.js.다운로드"></script>
+  
+
+
+
+</body></html>
